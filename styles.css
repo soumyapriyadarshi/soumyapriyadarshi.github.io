@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Inria Serif;
+}
+
+.image{
+    background-image: url("image/ChatGPT\ Image\ Nov\ 5\,\ 2025\,\ 09_20_46\ AM.png");
+    background-size: cover;
+    height: 100%;
+    opacity: 0.2;
+    
+}
+
+.background_image {
+    background-color: #0D1117;
+    height: 100vh;
+    width: 100%;
+    animation: appear 0.5s ease-out forwards;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    opacity: 100%;  
+    animation: appear 0.5s ease-out forwards; 
+}
+
+/* adding my image */
+
+.soumya {
+    height: 442px;
+    width: 442px;
+    background-color: #1B212B;
+    border-radius: 50%;
+    background-image: url("image/WhatsApp\ Image\ 2025-11-05\ at\ 08.14.58.jpeg");
+    background-size: cover;
+    background-position: center;
+    border: 20px solid #161d25;
+    opacity: 100%;
+    position: absolute;
+    bottom: 700px;
+    left: 10%;
+    box-shadow: 0 0 40px 5px #00BFFF;
+    animation: appear 1.5s ease-out forwards;
+}
+
+/* adding test about me */
+
+.text {
+    position: absolute;
+    bottom: 500px;
+}
+/* animation key frames */
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
