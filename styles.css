@@ -80,6 +80,61 @@
     margin-top: 30px;
 }
 
+/* adding button */
+.btn {
+    position: absolute;
+    bottom: 400px;
+    left: 51%;
+    animation: appear 2.5s ease-out forwards;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #C9D1D9;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #161d25;
+}
+
+/* adding hover effect to button */
+.btn .btn1:hover {
+    box-shadow: 0 0 25px 5px #00BFFF;
+    transition: 0.3s;
+}
+
+.btn .btn2:hover {
+    box-shadow: 0 0 25px 5px #00BFFF;
+    transition: 0.3s;
+}
+
+/* styling view project button */
+
+.btn .btn1{
+    height: 65px;
+    width: 179px;
+    background-color: #161d25;
+    border: none;
+    border-radius: 16px;
+}
+
+.btn .btn1 a{
+    font-size: 20px;
+}
+
+/* styling contact me button */
+.btn .btn2{
+    height: 65px;
+    width: 179px;
+    background-color: #161d25;
+    border: none;
+    border-radius: 16px;
+    margin-left: 80px;  
+}
+
+.btn .btn2 a{
+    font-size: 20px;
+}
+
 /* animation key frames */
 @keyframes appear {
     from{
