@@ -4,145 +4,128 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Inria Serif;
-}
-
-.image{
-    background-image: url("image/ChatGPT\ Image\ Nov\ 5\,\ 2025\,\ 09_20_46\ AM.png");
-    background-size: cover;
-    height: 100%;
-    opacity: 0.1;
     
 }
 
-.background_image {
+body{
     background-color: #0D1117;
-    height: 100vh;
-    width: 100%;
-    animation: appear 0.5s ease-out forwards;
-}
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    opacity: 100%;  
-    animation: appear 0.5s ease-out forwards; 
 }
 
-/* adding my image */
+/* ---------  stylling the container  --------- */
 
-.soumya {
-    height: 400px;
-    width: 400px;
+.container{
+    display: flex;
+    margin: 8px 8px 8px 8px;
+}
+
+/* ---------  styling for light and dark  --------- */
+
+.light{
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
     background-color: #1B212B;
-    border-radius: 50%;
-    background-image: url("image/WhatsApp\ Image\ 2025-11-05\ at\ 08.14.58.jpeg");
-    background-size: cover;
-    background-position: center;
-    border: 20px solid #161d25;
-    opacity: 100%;
-    position: absolute;
-    bottom: 400px;
-    left: 10%;
-    box-shadow: 0 0 40px 5px #00BFFF;
-    animation: appear 1.5s ease-out forwards;
+    color: white;
+    margin: 5px 5px 5px 5px;
 }
 
-/* adding test about me */
-
-.text {
-    position: absolute;
-    bottom: 560px;
-    left: 51%;
-    color: #C9D1D9;
-    animation: appear 2s ease-out forwards;
+.light i{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 15px;
 }
 
-.text h1{
-    font-size: 40px;
+/* ---------  styling for navbar component  --------- */
+
+.collection{
+    background-color: #1B212B;
+    width: 60px;
+    height: 450px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: appear 1s ease-in-out backwards;
+
 }
 
-.text .first {
-    height: 60px;
-    width: 500px;
-    margin-top: 20px;
+.collection p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
 }
 
-.text .first p, .text .second p {
-    font-size: 20px;
-    line-height: 1.5;
+.collection i{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
 }
 
-.text .second {
-    height: 60px;
-    width: 400px;
-    margin-top: 30px;
-}
+/* ---------  adding hovering --------- */
 
-/* adding button */
-.btn {
-    position: absolute;
-    bottom: 400px;
-    left: 51%;
-    animation: appear 2.5s ease-out forwards;
-}
-
-.btn a {
-    text-decoration: none;
-    color: #C9D1D9;
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #161d25;
-}
-
-/* adding hover effect to button */
-.btn .btn1:hover {
-    box-shadow: 0 0 25px 5px #00BFFF;
+.collection .home:hover{
+    color: #00BFFF;
     transition: 0.3s;
 }
 
-.btn .btn2:hover {
-    box-shadow: 0 0 25px 5px #00BFFF;
+.collection .Skills:hover{
+    color: #00BFFF;
     transition: 0.3s;
 }
 
-/* styling view project button */
-
-.btn .btn1{
-    height: 65px;
-    width: 179px;
-    background-color: #161d25;
-    border: none;
-    border-radius: 16px;
+.collection .projects:hover{
+    color: #00BFFF;
+    transition: 0.3s;
 }
 
-.btn .btn1 a{
-    font-size: 20px;
+.light i:hover{
+    color: #00BFFF;
+    transition: 0.3s;
 }
 
-/* styling contact me button */
-.btn .btn2{
-    height: 65px;
-    width: 179px;
-    background-color: #161d25;
-    border: none;
-    border-radius: 16px;
-    margin-left: 80px;  
-}
+/* ---------  adding media qurry for responsive --------- */
 
-.btn .btn2 a{
-    font-size: 20px;
-}
-
-/* animation key frames */
-@keyframes appear {
-    from{
-        opacity: 0;
-        transform: translateY(40px);
+@media(max-width: 480px){
+    .navbar{
+        display: flex;
+    }
+    .light{
+        height: 60px;
+        margin: 5px 5px 5px 5px;
     }
 
-    to {
+    .collection{
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .collection i{
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .collection p{
+        font-size: 12px;
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+
+}
+
+/* ---------  animation --------- */
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to{
         opacity: 1;
         transform: translateY(0px);
     }
