@@ -115,6 +115,10 @@ body{
         padding-left: 20px;
     }
 
+    .container{
+        flex-direction: column;
+    }
+
 }
 
 /* ---------  animation --------- */
