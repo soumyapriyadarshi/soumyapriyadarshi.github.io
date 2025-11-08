@@ -43,7 +43,7 @@ body{
     background-color: #1B212B;
     width: 60px;
     height: 450px;
-    margin: 5px 5px 5px 5px;
+    margin: 30px 5px 5px 5px;
     border-radius: 12px;
     color: white;
     text-align: center;
@@ -64,6 +64,25 @@ body{
     padding-top: 20px;
 }
 
+/* ---------  styling profile containner  --------- */
+
+.profile{
+    background-color: #1B212B;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    margin: 5px 5px 5px 20px;
+}
+
+.profile img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 500px;
+    width: 500px;
+    opacity: 0.35;
+    margin: 50px 50px 0px 50px;
+    padding: 5px;
+}
 /* ---------  adding hovering --------- */
 
 .collection .home:hover{
@@ -101,7 +120,7 @@ body{
         flex-direction: row;
         width: 100%;
         height: 60px;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 0px 5px 5px;
     }
 
     .collection i{
@@ -117,6 +136,17 @@ body{
 
     .container{
         flex-direction: column;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .profile{
+        margin: 5px 5px 5px 5px;
+    }
+
+    .profile img{
+        width: 450px;
+        height: 480px;
+        margin: 5px 5px 5px 5px;
     }
 
 }
