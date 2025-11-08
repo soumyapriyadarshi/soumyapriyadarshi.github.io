@@ -16,6 +16,7 @@ body{
 .container{
     display: flex;
     margin: 8px 8px 8px 8px;
+    animation: appear 1s ease-in-out backwards;
 }
 
 /* ---------  styling for light and dark  --------- */
@@ -48,8 +49,6 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    animation: appear 1s ease-in-out backwards;
-
 }
 
 .collection p{
