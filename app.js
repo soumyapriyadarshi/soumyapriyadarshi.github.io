@@ -5,5 +5,4 @@ const light =  document.querySelector(".light");
 // adding event listener to each element
 light.addEventListener("click", () => {
     document.body.classList.toggle("active");
-    light.classList.toggle("active");
 })
